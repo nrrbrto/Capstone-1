@@ -1,0 +1,535 @@
+css reset*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*general*/
+
+
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Hahmlet', serif;
+  overflow-x: hidden;
+}
+
+a
+{
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: #A63D40;
+}
+
+hr.divider { 
+  margin: 0em;
+  border-width: 2px;
+  background-color: black
+} 
+
+h5 {
+  margin-top: 10px;
+  margin-bottom: 10px ;
+}
+
+#red {
+  background-color: #A63D40;
+}
+
+#red-text {
+  color: #A63D40;
+}
+
+#black {
+  color: #26272b;
+}
+
+/*class*/
+.navbar .navbar-nav .nav-link {
+    font-size: 1.1em;
+    color: white;
+}
+
+/*id*/
+#aboutme {
+  position: relative;
+}
+
+#aboutme:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("background.jpg");
+    width: 100%;
+    height: 100%;
+    opacity : 0.5;
+    z-index: -1;
+}
+
+#remove_pl {
+  padding-left: 0;
+}
+
+#remove_px {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#pic-holder{
+  position: relative;
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+#pic:hover {
+  transform: scale(1.2,1.2) rotate(10deg);
+  z-index: -1;
+    transition: all 0.5s;
+}
+
+
+
+/*footer*/
+.site-footer
+{
+  background-color: #26272b;
+  padding:20px 20px 10px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#A63D40;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#A63D40;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:10px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.gitlab:hover
+{
+  background-color:#fc6d26
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+#navbar-icon {
+	align-content: center;
+	padding-right: 10px;
+}
+
+#footer_container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0; 
+    margin-left: 0;
+}
+
+
+/*carousel*/
+.card {
+  min-height: 50vh;
+}
+
+.card-body {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.carousel-item img {
+  height: 760px !important;
+    width: 100% !important;
+    object-fit: cover;
+}
+
+
+
+/*projects*/
+.projects {
+  padding: 0;
+  background-color: #26272b;
+}
+.projects .row {
+  overflow: hidden;
+}
+.projects .content-item {
+  padding: 40px;
+  border-left: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin: -1px;
+}
+.projects .content-item span {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  color: white;
+}
+.projects .content-item h4 {
+  font-size: 26px;
+  font-weight: 300;
+  padding: 0;
+  margin: 20px 0;
+}
+.projects .content-item p {
+  color: white;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*underline effect*/
+#underline {
+  color: black;
+  text-decoration: none;
+  background-position-y: -0%;
+  background-image: linear-gradient( transparent 50%, #A63D40 50%);
+  transition: background 500ms ease;
+  background-size: 3px;
+  background-size: auto 180%;
+}
+
+#underline:hover {
+  background-position-y: 115%;
+  color: white;
+}
+
+
+
+/* nav and hamburger*/
+.navbar {
+  position: sticky;
+  top: 0; 
+
+}
+
+nav {
+  z-index: 5555555555;
+}
+
+#carouselExampleIndicators {
+  margin-top: -56px;
+}
+
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  cursor: pointer;
+  opacity: 0; 
+  z-index: 2; 
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  position: relative;
+  
+  background:#A63D40;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 0;
+  padding:20px;
+  padding-top: 100px;
+  right: -100px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 0px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+  opacity: 1;
+}
+
+
+
+
+
+
+/*dump old css*/
+
+
+/*a .nav-link {
+  padding-left: 2px;
+  padding-right: 2px;
+}*/
+/*
+.navbar-nav li a:hover
+{
+  color: #26272b;
+  background-color:white!important;
+   transition: 0.5s ease;
+}
+
+@media only screen and (min-width: 960px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 0.5em;
+  }
+  .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+    border-right: 2px solid #26272b;
+  }
+}
+
+.row  {
+  margin-right: 0;
+  margin-left: 0;
+}*/
+
+/*
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light " >
+      <a class="navbar-brand" href="#"><i class="pl-2" id="red">nrrbrto.</i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler11" aria-controls="navbarToggler11" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarToggler11">
+          <ul class="navbar-nav  ml-auto  ">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+    <!-- end of navbar -->
+
+
