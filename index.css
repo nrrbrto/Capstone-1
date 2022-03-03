@@ -1,13 +1,15 @@
-css reset*/
+/*css reset*/*/
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+
 }
 
 /*general*/
-
+html {
+    scroll-behavior: smooth;
+}
 
 body
 {
@@ -15,6 +17,7 @@ body
   padding: 0;
   font-family: 'Hahmlet', serif;
   overflow-x: hidden;
+  overflow-y: scroll;
   background-color: #fdfcfd;
 }
 
@@ -116,15 +119,15 @@ u {
   line-height:24px;
   color:#737373;
 }
-.site-footer hr
-{
-  border-top-color:#bbb;
-  opacity:0.5
-}
-.site-footer hr.small
-{
-  margin:20px 0
-}
+  .site-footer hr
+  {
+    border-top-color:#bbb;
+    opacity:0.5
+  }
+  .site-footer hr.small
+  {
+    margin:20px 0
+  }
 .site-footer h6
 {
   color:#fff;
