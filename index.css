@@ -15,6 +15,7 @@ body
   padding: 0;
   font-family: 'Hahmlet', serif;
   overflow-x: hidden;
+  background-color: #fdfcfd;
 }
 
 a
@@ -32,13 +33,19 @@ a:hover
 hr.divider { 
   margin: 0em;
   border-width: 2px;
-  background-color: black
+  background-color: #26272b
 } 
 
 h5 {
   margin-top: 10px;
   margin-bottom: 10px ;
 }
+
+u {
+  text-decoration: none;
+  border-bottom: 5px solid #fdfcfd;
+}
+
 
 #red {
   background-color: #A63D40;
@@ -55,7 +62,7 @@ h5 {
 /*class*/
 .navbar .navbar-nav .nav-link {
     font-size: 1.1em;
-    color: white;
+    color: #fdfcfd;
 }
 
 /*id*/
@@ -313,7 +320,7 @@ h5 {
   display: block;
   font-size: 24px;
   font-weight: 400;
-  color: white;
+  color: #fdfcfd;
 }
 .projects .content-item h4 {
   font-size: 26px;
@@ -322,7 +329,7 @@ h5 {
   margin: 20px 0;
 }
 .projects .content-item p {
-  color: white;
+  color: #fdfcfd;
   font-size: 15px;
   margin: 0;
   padding: 0;
@@ -343,9 +350,19 @@ h5 {
 
 #underline:hover {
   background-position-y: 115%;
-  color: white;
+  color: #fdfcfd;
 }
 
+.underline {
+    border-bottom: 1px solid currentColor;
+  display: inline-block;
+  line-height: 0.85;
+  text-shadow:
+    2px 2px 26272b,
+    2px -2px 26272b,
+    -2px 2px 26272b,
+    -2px -2px 26272b;
+}
 
 
 /* nav and hamburger*/
@@ -449,7 +466,7 @@ nav {
   padding-top: 100px;
   right: -100px;
   
-  background: white;
+  background: #fdfcfd;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   transform-origin: 0% 0%;
@@ -486,7 +503,7 @@ nav {
 .navbar-nav li a:hover
 {
   color: #26272b;
-  background-color:white!important;
+  background-color:#fdfcfd!important;
    transition: 0.5s ease;
 }
 
